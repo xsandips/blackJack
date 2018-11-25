@@ -1,0 +1,20 @@
+{
+  "name": "Blackjack",
+  "version": "1.0.0",
+  "description": "An implementation of Blackjack using the command line.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./test",
+    "build": "tsc --removeComments --module commonjs --target ES5 --out main.js main.ts && tsc --removeComments --module commonjs --target ES5 --out test/blackjack.js test/blackjack.ts"
+  },
+  "keywords": [
+    "Blackjack",
+    "Cards"
+  ],
+  "author": "chetan patil",  
+  "dependencies": {
+    "typescript": "1.5.0-beta",
+    "inquirer": "0.8.5",
+    "observed": "1.1.1"
+  }
+}
